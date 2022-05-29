@@ -11,4 +11,12 @@ public class Rounder {
         DecimalFormat df = new DecimalFormat("0.000");
         return df.format(value);
     }
+
+    // Метод округления цены
+    public static String roundPrice(double value) {
+        // Шаблон для цены, до 2-х знаков после
+        // десятичного разделителя
+        DecimalFormat df = new DecimalFormat("0.00");
+        return df.format(value);
+    }
 }
