@@ -41,7 +41,7 @@ public class ProductInfo {
 
         totalWeight = getTotalWeight(product.getWeight(), quantity);
         totalWeightRounded = getTotalWeightRounded(totalWeight);
-        totalPrice = getTotalPrice(price,totalWeight);
+        totalPrice = getTotalPrice(price, totalWeight);
         totalPriceRounded = getTotalPriceRounded(totalPrice);
 
         return "------------------------\n" +
