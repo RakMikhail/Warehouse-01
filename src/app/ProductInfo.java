@@ -19,7 +19,7 @@ public class ProductInfo {
 
     static private void doInputs() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Product name: ");
+        System.out.print("Product name:  ");
         name = scanner.nextLine();
         System.out.print("Product weight per unit" + " (" + MEASURE + "): ");
         weight = scanner.nextDouble();
