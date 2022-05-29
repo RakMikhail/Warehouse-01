@@ -40,6 +40,7 @@ public class ProductInfo {
 
         totalWeight = getTotalWeight(product.getWeight(), quantity);
         totalWeightRounded = getTotalWeightRounded(totalWeight);
+        totalPrice = getTotalPrice(price,totalWeight);
 
         return "------------------------\n" +
                 "Product total weight " + name + " (" + MEASURE + "): "
@@ -59,5 +60,10 @@ public class ProductInfo {
     // Метод вывода в консоль.
     static private void showInfo(String output) {
         System.out.println(output);
+    }
+
+    // Метод рассчета общего веса.
+    static private double getTotalPrice(double price, double weight) {
+        return price * weight;
     }
 }
