@@ -69,7 +69,7 @@ public class ProductInfo {
         return price * weight;
     }
 
-    // Метод округления общего веса.
+    // Метод округления общей цены.
     static private String getTotalPriceRounded(double totalPrice) {
         return Rounder.roundPrice(totalPrice);
     }
