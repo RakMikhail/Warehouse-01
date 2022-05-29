@@ -28,7 +28,7 @@ public class ProductInfo {
         weight = scanner.nextDouble();
         System.out.print("Product quantity (pcs.): ");
         quantity = scanner.nextInt();
-        System.out.print("Price per kilogram: ");
+        System.out.print("Price per kilogram($): ");
         price = scanner.nextDouble();
         scanner.close();
     }
@@ -46,7 +46,8 @@ public class ProductInfo {
 
         return "------------------------\n" +
                 "Product total weight " + name + " (" + MEASURE + "): "
-                + totalWeightRounded;
+                + totalWeightRounded + "\n------------------------\n" +
+                "Price: $" + totalPriceRounded;
     }
 
     // Метод рассчета общего веса.
