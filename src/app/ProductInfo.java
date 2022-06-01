@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ProductInfo {
 
-    static String name;
+    static String name ;
     static double weight;
     static int quantity;
     static Product product;
